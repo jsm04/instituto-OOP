@@ -1,4 +1,4 @@
-# desarollo-sistema-biblioteca
+# Desarrollo sistema de biblioteca
 
 To install dependencies:
 
