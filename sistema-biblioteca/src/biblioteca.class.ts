@@ -73,9 +73,9 @@ export class Biblioteca {
 	}
 
 	buscarLibroPorTituloFuzzy(palabraClave: string): Libro[] {
-		const keyword = palabraClave.toLowerCase();
+		const keyword = this.#normalizarTexto(palabraClave);
 		return [...this.#librosStorage].filter((libro) =>
-			libro.titulo.toLowerCase().includes(keyword)
+			libro.titulo.includes(keyword)
 		);
 	}
 
