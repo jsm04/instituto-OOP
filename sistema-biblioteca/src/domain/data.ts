@@ -1,6 +1,7 @@
-import type { Biblioteca } from './biblioteca.class';
-import { LibroDigital, Libro } from './libro.class';
-import { Usuario } from './usuario.class';
+import type { Biblioteca } from './biblioteca';
+import { Libro } from './libro';
+import {LibroDigital} from './libro-digital';
+import { Usuario } from './usuario';
 
 const librosStore: Libro[] = [
 	new Libro('1984', 'George Orwell', 978045152935, true),

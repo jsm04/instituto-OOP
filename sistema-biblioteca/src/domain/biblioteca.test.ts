@@ -1,7 +1,7 @@
 import { describe, expect, test, beforeEach } from 'bun:test';
-import { Biblioteca } from './biblioteca.class';
-import { Usuario } from './usuario.class';
-import { Libro } from './libro.class';
+import { Biblioteca } from './biblioteca';
+import { Usuario } from './usuario';
+import { Libro } from './libro';
 
 describe('Biblioteca', () => {
 	let biblioteca: Biblioteca;

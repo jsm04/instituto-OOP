@@ -1,5 +1,5 @@
-import type { Libro } from './libro.class';
-import type { Usuario } from './usuario.class';
+import type { Libro } from './libro';
+import type { Usuario } from './usuario';
 
 export class Biblioteca {
 	#librosStorage: Set<Libro> = new Set();

@@ -1,6 +1,6 @@
-import { Biblioteca } from './biblioteca.class';
-import { seedBiblioteca } from './data.mock';
-import { Usuario } from './usuario.class';
+import { Biblioteca } from './domain/biblioteca';
+import { seedBiblioteca } from './domain/data';
+import { Usuario } from './domain/usuario';
 import { numeroAleatorio } from './utils';
 
 const main = function () {

@@ -1,4 +1,4 @@
-import type { Libro } from './libro.class';
+import type { Libro } from './libro';
 
 export class Usuario {
 	#inventarioUsuario: Libro[] = [];
