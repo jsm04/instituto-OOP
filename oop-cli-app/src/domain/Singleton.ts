@@ -1,12 +1,12 @@
-export default class<T> {
-	private static _instance: any | null = null;
+export default abstract class Singleton {
+	private static instances: Map<Function, any> = new Map();
 
 	protected constructor() {}
 
-	static getInstance() {
-		if (this._instance === null) {
-			this._instance = new this();
+	static getInstance<T extends Singleton>(this: new () => T): T {
+		if (!Singleton.instances.has(this)) {
+			Singleton.instances.set(this, new this());
 		}
-		return this._instance;
+		return Singleton.instances.get(this) as T;
 	}
 }

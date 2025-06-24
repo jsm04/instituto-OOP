@@ -1,6 +1,6 @@
 import Command from '../Command';
-import type Frame from '../FrameManager';
-import FrameManager from '../FrameManager';
+import type Frame from '../Frame';
+import FrameManager from '../Frame';
 
 export interface MenuEntry {
 	key: number;

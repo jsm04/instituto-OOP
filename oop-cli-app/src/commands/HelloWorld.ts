@@ -1,10 +1,9 @@
 import Command from '../domain/Command';
-import Singleton from '../domain/Singleton';
 
 export default class HelloWorld extends Command {
-	name = 'HelloCommand';
+	name = 'hello_world';
 
 	run() {
-		console.log('Hello world');
+		console.log('hello world runned');
 	}
 }
